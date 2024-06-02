@@ -66,6 +66,7 @@ public class Plant {
         if(watering.isBefore(getPlanted())){
             throw new PlantException("The plant is not yet planted");
         }
+        this.watering=watering;
     }
 
     public int getFrequencyOfWatering() {
